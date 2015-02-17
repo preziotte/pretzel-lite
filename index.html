@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel="stylesheet" href="css/normalize.css">
+		<link type="text/css" href="css/style.css" rel="stylesheet"/>
+
+		<title>pretzel-lite</title>
+
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/mousetrap/mousetrap.js"></script>
+<!--         <script src="bower_components/d3/d3.js"></script> -->
+<!--         <script src="bower_components/underscore/underscore.js"></script> -->
+        <script src="js/main.js"></script>
+
+	</head>
+
+	<body>
+
+		<div id='navBar' class='navbar navbar-default'>
+			<div class='navbar-header navbar-brand'>Pretzel.js</div>
+			<div class='navbar-collapse collapse'>
+				<div id='loading' style='float: right;'><img id='sync' class='spinner' src='img/sync.png' /></div>
+				<button class="btn btn-info btn-sm" id='aboutBtn' data-go='about'>About</button>
+				<button class="btn btn-primary btn-sm" id='entryBtn' data-go='contentList'>Entries</button>
+			</div>
+		</div>
+
+		<div id='pageContainer'>
+			<div class='page list-group' id='contentList'></div>
+			<div class='page' id='contentPage'></div>
+			<div class='page' id='about'>Static Ass About Page</div>
+		</div>
+
+
+	</body>
+</html>
